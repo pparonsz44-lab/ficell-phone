@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ficell Phone - Temukan Kemewahan</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <div class="logo">Ficell<span>Phone</span></div>
+    <ul>
+      <li><a href="index.html" class="active">Beranda</a></li>
+      <li><a href="shop.html">Belanja</a></li>
+      <li><a href="sell.html">Jual</a></li>
+      <li><a href="cart.html">Keranjang (<span id="cart-count">0</span>)</a></li>
+    </ul>
+    <div class="user">
+      <span id="username">Guest</span>
+      <button onclick="showAuthModal()" class="btn-primary" id="auth-button">Login</button>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Temukan Kemewahan.</h1>
+      <h2>Jual dengan Kepercayaan.</h2>
+      <a href="shop.html" class="btn-large">Jelajahi Koleksi</a>
+    </div>
+  </section>
+
+  <section style="padding: 100px 7%;">
+    <h2 style="text-align:center; font-size:2.8rem; color:#ffd700; margin-bottom:3rem;">Produk Unggulan</h2>
+    <div class="products-grid" id="featured-products"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - Ficell Phone</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <div class="logo">Ficell<span>Phone</span></div>
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="shop.html">Belanja</a></li>
+      <li><a href="sell.html">Jual</a></li>
+      <li><a href="cart.html">Keranjang</a></li>
+    </ul>
+    <div class="user">
+      <span id="username">Guest</span>
+      <button onclick="showAuthModal()" class="btn-primary" id="auth-button">Login</button>
+    </div>
+  </nav>
+
+  <div style="padding: 130px 8%; max-width: 800px; margin: 0 auto;">
+    <h1 style="text-align:center; color:#ffd700; margin-bottom: 3rem;">Checkout</h1>
+    
+    <div id="checkout-summary" style="margin:2.5rem 0; padding:2rem; background:#111; border-radius:16px; border:1px solid #ffd700;">
+      <h3>Ringkasan Pembayaran</h3>
+      <p style="margin:1.5rem 0; font-size:1.4rem;">Total: <strong>Rp <span id="final-total">0</span></strong></p>
+    </div>
+    
+    <button onclick="processPayment()" class="btn-large" style="width:100%; padding:1.5rem; font-size:1.4rem;">
+      Bayar Sekarang
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

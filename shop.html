@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belanja - Ficell Phone</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <div class="logo">Ficell<span>Phone</span></div>
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="shop.html" class="active">Belanja</a></li>
+      <li><a href="sell.html">Jual</a></li>
+      <li><a href="cart.html">Keranjang (<span id="cart-count">0</span>)</a></li>
+    </ul>
+    <div class="user">
+      <span id="username">Guest</span>
+      <button onclick="showAuthModal()" class="btn-primary" id="auth-button">Login</button>
+    </div>
+  </nav>
+
+  <div style="padding-top: 110px; text-align:center; padding-bottom: 60px;">
+    <h1 style="font-size: 3.5rem; color:#ffd700;">Koleksi iPhone Premium</h1>
+  </div>
+
+  <div class="products-grid" id="shop-products"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

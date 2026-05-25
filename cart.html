@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keranjang - Ficell Phone</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <div class="logo">Ficell<span>Phone</span></div>
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="shop.html">Belanja</a></li>
+      <li><a href="sell.html">Jual</a></li>
+      <li><a href="cart.html" class="active">Keranjang (<span id="cart-count">0</span>)</a></li>
+    </ul>
+    <div class="user">
+      <span id="username">Guest</span>
+      <button onclick="showAuthModal()" class="btn-primary" id="auth-button">Login</button>
+    </div>
+  </nav>
+
+  <div style="padding: 130px 8%;">
+    <h1 style="text-align:center; color:#ffd700; margin-bottom: 4rem;">Keranjang Belanja</h1>
+    <div id="cart-items"></div>
+    <div style="text-align:right; margin-top: 3rem;">
+      <h2>Total: Rp <span id="total-price">0</span></h2>
+      <button onclick="goToCheckout()" class="btn-large" style="margin-top:25px;">Lanjut ke Checkout</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

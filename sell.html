@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jual - Ficell Phone</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <div class="logo">Ficell<span>Phone</span></div>
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="shop.html">Belanja</a></li>
+      <li><a href="sell.html" class="active">Jual</a></li>
+      <li><a href="cart.html">Keranjang (<span id="cart-count">0</span>)</a></li>
+    </ul>
+    <div class="user">
+      <span id="username">Guest</span>
+      <button onclick="showAuthModal()" class="btn-primary" id="auth-button">Login</button>
+    </div>
+  </nav>
+
+  <div style="padding: 130px 8%; text-align:center;">
+    <h1 style="color:#ffd700; font-size:3.2rem; margin-bottom:1rem;">Jual iPhone Anda</h1>
+    <p style="color:#aaa; max-width:700px; margin:0 auto 3rem;">Dapatkan penawaran terbaik untuk iPhone bekas Anda</p>
+    
+    <div style="max-width:700px; margin:0 auto; background:#111; padding:3rem; border-radius:24px; border:1px solid #ffd700;">
+      <input type="text" placeholder="Model iPhone" style="width:100%;padding:15px;margin:10px 0;background:#222;border:none;color:white;border-radius:10px;">
+      <input type="text" placeholder="Kapasitas & Kondisi" style="width:100%;padding:15px;margin:10px 0;background:#222;border:none;color:white;border-radius:10px;">
+      <textarea placeholder="Deskripsi dan kondisi barang" rows="5" style="width:100%;padding:15px;margin:10px 0;background:#222;border:none;color:white;border-radius:10px;"></textarea>
+      <button onclick="submitSell()" class="btn-large" style="width:100%;margin-top:20px;">Kirim Penawaran</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
