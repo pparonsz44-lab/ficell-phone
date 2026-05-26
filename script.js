@@ -2,12 +2,12 @@ let cart = JSON.parse(localStorage.getItem('cart')) || [];
 let currentUser = JSON.parse(localStorage.getItem('currentUser')) || null;
 
 const products = [
-  { id: 1, name: "iPhone 16 Pro Max", price: 28999000, img: "https://picsum.photos/id/1015/800/800" },
-  { id: 2, name: "iPhone 16 Pro", price: 25999000, img: "https://picsum.photos/id/201/800/800" },
-  { id: 3, name: "iPhone 16 Plus", price: 21999000, img: "https://picsum.photos/id/237/800/800" },
-  { id: 4, name: "iPhone 15 Pro Max", price: 21999000, img: "https://picsum.photos/id/180/800/800" },
-  { id: 5, name: "iPhone 15 Pro", price: 18999000, img: "https://picsum.photos/id/251/800/800" },
-  { id: 6, name: "iPhone 14 Pro Max", price: 16999000, img: "https://picsum.photos/id/133/800/800" }
+  { id: 1, name: "iPhone 16 Pro Max", price: 28999000, img: 'gambar/iphone 16 pm.jpeg' },
+  { id: 2, name: "iPhone 16 Pro", price: 25999000, img: "gambar/download 2.jpeg" },
+  { id: 3, name: "iPhone 16 Plus", price: 21999000, img: "gambar/download 3.jpeg" },
+  { id: 4, name: "iPhone 15 Pro Max", price: 21999000, img: "gambar/download 4.jpeg" },
+  { id: 5, name: "iPhone 15 Pro", price: 18999000, img: "gambar/download 5.jpeg" },
+  { id: 6, name: "iPhone 14 Pro Max", price: 16999000, img: "gambar/download 7.jpeg" }
 ];
 
 function updateUserUI() {
